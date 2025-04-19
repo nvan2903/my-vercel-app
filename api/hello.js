@@ -1,5 +1,4 @@
-const app = require('./app');
-
 module.exports = (req, res) => {
-  app(req, res);
+  console.info('/hello call success');
+  res.send('Welcome to Vercel Serverless Function!');
 };

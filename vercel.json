@@ -1,8 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/hello.js", "use": "@vercel/node" },
-    { "src": "api/emailValidate.js", "use": "@vercel/node" }
+    { "src": "api/*.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/hello", "dest": "api/hello.js" },
